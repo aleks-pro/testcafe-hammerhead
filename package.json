@@ -102,5 +102,12 @@
     "publish-please-only": "publish-please",
     "publish-please": "del-cli package-lock.json node_modules && npm i && publish-please",
     "prepublish": "publish-please guard"
+  },
+  "overrides": {
+    "gulp-mocha-simple": {
+      "mocha": {
+        "serialize-javascript": "7.0.4"
+      }
+    }
   }
 }
